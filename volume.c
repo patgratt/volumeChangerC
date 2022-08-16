@@ -6,6 +6,7 @@
 // Number of bytes in .wav header
 const int HEADER_SIZE = 44;
 
+// Allow main function to take command line arguments, argc is argument count, char* argv[] is argument vector, which is an array of the arguments
 int main(int argc, char *argv[])
 {
     // Check command-line arguments
@@ -37,7 +38,7 @@ int main(int argc, char *argv[])
     // Copy header from input file to output file
 
     // declare a variable of type uint8_t, which stores unsigned integers
-    // that are 8 bits (1 byte), we know header is 44 bytes
+    //% that are 8 bits (1 byte), we know header is 44 bytes
     // so this is an array with a size of 44 bytes
     uint8_t header[HEADER_SIZE];
     // first parameter is a pointer to the location where we'll store
